@@ -1,0 +1,15 @@
+#flashSaleTwo{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+   
+} 
+
+#topText{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}

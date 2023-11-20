@@ -1,0 +1,116 @@
+#footerWrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: white;
+    /* background-color:  #292c38; */
+    background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    margin-top: 80px;
+    z-index: -2;
+}
+#overlay{
+  background-color: #292c38;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Topbar Section */
+
+#topBar{
+    width: 100%;
+    height: auto;
+    background-color: #AE1C9A;
+    border-radius: 4px; 
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -49px;
+    padding: 20px;
+}
+.items{
+    flex-basis: 295px;
+    display: flex;
+    align-items: center;
+    padding: 10px;  
+}
+.icon{
+    width: 20%;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.topText h5,
+.topText p{  
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .items{
+        flex-basis: 240px;
+        padding: 10px;      
+    }  
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .items{
+        flex-basis: 430px;
+        padding: 10px;  
+    }
+  }
+
+  /* Top bar sections is End here  */
+
+
+
+
+/* footer Item Sections is Start */
+
+.footerItems{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 70px 0px;
+   
+   
+}
+
+.footerItem ul{
+  
+    list-style: none;
+    padding-left: 0px;
+}
+.footerItem ul li {
+    margin-top: 16px;
+}
+
+.footerItem ul li a{
+   
+    text-decoration: none;
+    color: #C8C8C8;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.footerItem ul li a:hover{
+    color: #AE1C9A;
+    
+}
