@@ -1,0 +1,59 @@
+#brandWrapper{
+  width: 100%;
+  height: auto;
+}
+#brandtextWrapper{
+    margin-top: 16px;
+    padding: 16px;
+}
+.topText{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+
+
+
+#brandProduct{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.items{
+    width: 218px;
+    height: 135px;
+    border: 1px solid 
+    #f3e7f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.items img {
+  filter: grayscale(100%);
+}
+.items:hover img{
+  transition: 0.3s all ease;
+  filter: grayscale(0%);
+}
+/* Media Query for mobile Devices  */
+@media screen and (min-width: 0px) and (max-width: 476px) {
+    .items{
+        width: 150px;
+        height: 135px;
+        
+    }
+    
+  }
+
+  /* Media Query For large device */
+  @media (min-width: 1200px) {
+    .items{
+      width: 182px;
+        
+    }
+  }
+

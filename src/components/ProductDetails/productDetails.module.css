@@ -1,0 +1,148 @@
+#productDetailsMainWrapper{
+  width: 100%;
+}
+.topNavigation{
+    margin-top: 30px;
+}
+.topNavigation ul{
+    display: flex;
+    margin-top: 60px;
+}
+
+.topNavigation ul li{
+    padding: 16px;
+    list-style: none;
+   
+}
+.topNavigation ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Product details Section  */
+
+#productDetailsWrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    gap: 15px;
+}
+
+#imgSectionWrapper{
+  width: 50%;
+  height: 100%;
+ 
+}
+#largeImg{
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(174, 28, 154, 0.08);
+    border-radius: 8px;
+}
+#largeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#imgNavigateWrap{
+ width: 100%;
+ height: 135px;
+ display: flex;
+ gap: 4%;
+}
+
+#imgItem{
+    width: 20%;
+    height: 100%;
+    margin-top: 16px;
+    border: 2px solid rgba(174, 28, 154, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgItem img{
+    width: 90%;
+    height: 90%;
+}
+
+/* Img Section is End Here */
+
+
+/* Product info section is start here */
+
+#productInfoWrapper{
+    width: 50%;
+    padding: 25px;
+    margin-left: 15px;
+}
+#productInfoWrapper div h1{
+    color: #232532;
+    font-family: "Jost", sans-serif;
+    font-weight: 900;
+}
+.starIcon{
+    color:#ffa800;
+    margin-bottom: 5px;
+    display: inline-block;
+   
+}
+.reviews{
+    margin-left: 8px;
+    display: inline-block;
+}
+.oldPrice{
+    color: #797979;
+    font-size: 16px;
+    font-weight: 500;
+}
+.newPrice{
+    color: red;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+.shortDescription{
+    color: #797979;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0;
+    line-height: 25px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.hr{
+
+    color: #f3b4ea;
+    opacity: .25;
+}
+
+.availabillitySection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: rgba(174, 28, 154, 0.08);
+    border-radius: 13px;
+    display: inline-block;
+}
+
+.availabillitySection p{
+    margin: 0;
+}
+#availabillityInnerText{
+    color: #AE1C9A;
+}
+
+ul li{
+    margin-top: 10px;
+}

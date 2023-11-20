@@ -1,0 +1,38 @@
+#NewArivalsWrapper{
+    width: 100%;
+    height: auto;
+    background-color: #f3e7f1;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+#productWrapper{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#topText{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 28px;
+}
+/* media Query */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #productWrapper{
+        gap: 20px;     
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1399px) {
+    #productWrapper{
+        gap: 24px;     
+    }
+  }
+
+  
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #productWrapper{
+        gap: 16px;     
+    }
+  }
+

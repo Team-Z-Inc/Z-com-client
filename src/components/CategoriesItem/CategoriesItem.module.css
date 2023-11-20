@@ -1,0 +1,36 @@
+.itemWrapper{
+    background-color: #f3e7f1;
+    width: 182px;
+    height: 182px;
+    border-radius: 12px;
+    flex-grow: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .itemWrapper{
+    background-color: #f3e7f1;
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    flex-grow: 1;
+  }
+}
+.imgSection{
+  width: 100%;
+  height: 60%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemWrapper:hover{
+  border: 2px solid rgb(182, 130, 130);
+}
+.itemWrapper:hover img{
+    transition: 0.2s all ease-in;
+    scale: 1.2;
+}
+.textSection{
+  display: flex;
+  justify-content: center;
+}

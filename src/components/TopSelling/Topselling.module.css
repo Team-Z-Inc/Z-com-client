@@ -1,0 +1,98 @@
+#topSellingWrapper{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 60px;
+   overflow: hidden;
+}
+
+/* Top Text sections  */
+
+#topText > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Item section is Start here */
+#itemWrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+/* Best Seller Section */
+
+#bestSellerWrapper{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    background: linear-gradient(to right, #fdcaff, #c9ddfa);
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+.topText{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+/* brand name Wrapper */
+#brandNameWrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.brandItem{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.brandItem h5{
+    margin-top: 5px;
+}
+.brandItem img{
+    width: 100%;
+    height: 90%;
+}
+
+/* Media Query.... */
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .brandItem{
+        width: 130px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .brandItem h5{
+        margin-top: 0px;
+    }
+    .brandItem img{
+        width: 50%; 
+    }
+    
+  }
+
+  /* @media screen and (min-width: 280px) and (max-width: 430px) {
+    .brandItem{
+        width: 130px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .brandItem h5{
+        margin-top: 0px;
+    }
+    .brandItem img{
+        width: 50%; 
+    }
+    
+  } */
