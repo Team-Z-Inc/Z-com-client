@@ -1,0 +1,148 @@
+.container {
+  width: 100%;
+  height: 80px;
+  background: #ae1c9a;
+}
+.container .navbar {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allcatelog {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.allcatelog .icon {
+  padding: 8px;
+  margin-right: 5px;
+  font-size: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.27);
+}
+.navbar .menuitem {
+  display: flex;
+  align-items: center;
+}
+.navbar .menuitem li {
+  position: relative;
+  margin-right: 10px;
+  list-style: none;
+}
+.navbar .menuitem li a {
+  width: 100%;
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar .active {
+  border-bottom: 2px solid #fff;
+}
+.navbar .menuitem li a:hover {
+  color: #fff;
+}
+
+.navbar .vandorbtn button {
+  position: relative;
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #000;
+  background: #ffbb38;
+  transition: 0.4s;
+}
+.navbar .vandorbtn .arrow {
+  font-size: 40px;
+}
+.navbar .vandorbtn button::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #232532;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  z-index: -1;
+}
+.navbar .vandorbtn button:hover::after {
+  width: 100%;
+}
+.navbar .vandorbtn button:hover {
+  color: #fff;
+  z-index: 2;
+}
+
+.navbar .menuitem li:hover .dropdown {
+  visibility: visible;
+}
+.navbar .allcatelog .dropdown {
+  position: absolute;
+  top: 3.9rem;
+  left: 0;
+  width: 250px;
+  height: auto;
+  color: #000;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+  z-index: 5;
+  transition: 0.1s;
+}
+.navbar .allcatelog .dropdown .dropMenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin-right: 10px;
+  list-style: none;
+  color: #000;
+}
+.navbar .allcatelog .dropdown .dropMenu:hover {
+  background: #ae1c9a;
+  color: #fff;
+}
+
+.navbar .allcatelog .dropdown .dropMenu .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  color: #ffbb38;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .container .navbar {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1240px) {
+  .navbar .vandorbtn {
+    display: none;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1000px) {
+  .container .navbar {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 868px) {
+  .navbar .menuitem {
+    display: none;
+  }
+}
