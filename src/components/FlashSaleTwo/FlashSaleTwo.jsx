@@ -14,8 +14,6 @@ function FlashSaleTwo() {
          </div>
        </div>
 
-
-
      <div id={styles.flashSaleTwo}>
                 <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-5.webp" title ="Leather Dress Shoes" prevPrice="$22.99" latestPrice="$13.99"/>
 
