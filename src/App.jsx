@@ -1,19 +1,20 @@
-import React from 'react'
-import Home from './Pages/Home'
-import ProductDetails from './components/ProductDetails/ProductDetails'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from "./Pages/Home";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <>
-      <BrowserRouter> 
+      <BrowserRouter>
+        <Navigation />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/productDetails' element={<ProductDetails />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/productDetails" element={<ProductDetails />} />
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App;
