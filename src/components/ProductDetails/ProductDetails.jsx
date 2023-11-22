@@ -12,15 +12,13 @@ function ProductDetails() {
 
 
  const [images, setImg] = useState({
-  img1: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-14.webp",
-  img2: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-8.webp",
-  img3: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-slider-img-1.webp",
-  img4: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-14.webp"
+  img1: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
+  img2: "https://i.ibb.co/WpkH1vq/headphone-6.png",
+  img3: "https://i.ibb.co/yRYbDCc/headphone-7.png"
 
  });
 
  const [activeImg, setActiveImg] = useState(images.img1)
-
 
 // Accordian Section State
 const [isAccordionOpen, setAccordionOpen] = useState(false);
@@ -139,7 +137,6 @@ const [quantity, setQuantity] = useState(0)
                   <div id={styles.addToCartButton}>
                      <span> <IoMdAdd id='animatedHover' /> <p className='d-inline mx-1'>Add To Cart</p></span>
                   </div>
-
               </div>
 
                {/*  Add to Cart Button Section Is End Here */}
@@ -164,12 +161,12 @@ const [quantity, setQuantity] = useState(0)
          </div>
           {/* Product details Section is End here */}
 
-         <div className='container'>
+         <div className='container' id={styles.productDes}>
           <p ><b>Introduction</b> <br /> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book </p>
 
 
           <div>
-          <p className='py-3'><b>Features:</b> <br /> 
+          <p className='py-3'  id={styles.productDes} ><b>Features:</b> <br /> 
            
            <ul>
             <li>slim body with metal cover</li>

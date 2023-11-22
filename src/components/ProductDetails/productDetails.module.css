@@ -123,7 +123,7 @@
     font-weight: 500;
 }
 .newPrice{
-    color: red;
+    color: tomato;
     font-size: 1.5rem;
     margin-left: 5px;
 }
@@ -148,7 +148,7 @@
     font-size:18px;
     font-weight: 500;
     padding: 10px 15px;
-    background-color: rgba(174, 28, 154, 0.08);
+    background-color: #e2f0ff;
     border-radius: 13px;
     display: inline-block;
 }
@@ -246,10 +246,10 @@ ul li{
     border: 1px solid rgba(174, 28, 154, 0.08);
     border-radius: 3rem;
     display: inline-block;
-    background: #AE1C9A;
+    background: #0989ff;
     font-size: 18px;
-    font-weight: 500;
-    color: #FFFFFF;
+    font-weight: 600;
+    color: #fff;
     font-family: "Inter", sans-serif;
     transition: all 0.3s;
     overflow: hidden;
@@ -258,8 +258,9 @@ ul li{
     align-items: center;
 
 }
+
 #addToCartButton:hover{
-   color: #000000;
+   color: #252121;
    font-weight: bold;
 }
 
@@ -284,6 +285,14 @@ ul li{
     margin-left: 6px;
   }
 
+  #productDes p{
+   font-family:  "Jost", sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   font-weight: 400;
+   color: #55585B;
+
+  }
   /* Media Query Sections */
 
   @media screen and (min-width: 180px) and (max-width: 768px) {
