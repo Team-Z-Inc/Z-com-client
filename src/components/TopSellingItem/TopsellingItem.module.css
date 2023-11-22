@@ -1,4 +1,4 @@
-#topWrapper{
+#topWrapper {
   width: 415px;
   height: 215px;
   display: flex;
@@ -7,79 +7,61 @@
   border-radius: 1.2rem;
   background-color: #ffffff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
 }
-#topWrapper:hover{
-    border: 1px solid #8d218d;
+#topWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border: 1px solid #f3ecec;
 }
-.leftItem{
-    width: 45%;
-    background-color: #f9edf7;
-    border-radius: 4px;
-    margin-left: 18px;
- 
-
+.leftItem {
+  width: 45%;
+  /* background-color: #f5ffff; */
+  background-color: #f2fff7;
+  border-radius: 4px;
+  margin-left: 18px;
 }
-.leftItem img{
-    width: 100%;
-   
+.leftItem img {
+  width: 100%;
 }
-.rightItem{
-    width: 60%;
+.rightItem {
+  width: 60%;
 }
-.textWrap{
-    margin-left: 10px;
-    padding: 10px;
+.textWrap {
+  margin-left: 10px;
+  padding: 10px;
 }
 
-.starIcon{
-    
-    color: #ffa800;
-    margin-bottom: 4px;
+.starIcon {
+  color: #ffa800;
+  margin-bottom: 4px;
 }
-.mainPrice{
-    color: #8d218d;
-    margin-left: 5px;
+.mainPrice {
+  color: #8d218d;
+  margin-left: 5px;
 }
 
 /* Media Query */
 
- 
-  
-  @media screen and (min-width: 430px) and (max-width: 767px) {
-    #topWrapper{
-        
-        width:  525px;
-        height: 260px;
-       
-    
-    }
+@media screen and (min-width: 430px) and (max-width: 767px) {
+  #topWrapper {
+    width: 525px;
+    height: 260px;
   }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    #topWrapper{
-        
-        width:  335px;
-        height: 195px;
-       
-    
-    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #topWrapper {
+    width: 335px;
+    height: 195px;
   }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #topWrapper{
-        
-        width:  295px;
-        height: 200px;
-       
-    
-    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #topWrapper {
+    width: 295px;
+    height: 200px;
   }
-  @media screen and (min-width: 1200px) and (max-width: 1399px) {
-    #topWrapper{
-        
-        width:  355px;
-        height: 200px;
-       
-    
-    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  #topWrapper {
+    width: 355px;
+    height: 200px;
   }
-
+}

@@ -22,14 +22,16 @@ function BestSellWeek() {
             {/* Best Four Item Sell in This Week */}
 
             <div id={styles.fourBestSellWrap}>
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-5.webp" title ="Leather Dress Shoes" prevPrice="$22.99" latestPrice="$13.99"/>
-
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-3.webp" title ="Trendy Bucket Hat" prevPrice="$39.99" latestPrice="$23.99"/>
+            <CartItem img ="  https://i.ibb.co/tpypd3B/cpu-5.png" title ="Feminine Wrap Blouse" prevPrice="$103.99" latestPrice="$6.99"/>
 
 
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-6.webp" title ="Stylish Statement Earrings" prevPrice="$39.99" latestPrice="$26.99"/>
+            <CartItem img ="https://i.ibb.co/5FPhGtq/headphone-8.png" title ="Trendy Bucket Hat" prevPrice="$18.99" latestPrice="$10.99"/>
 
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-9.webp" title ="Boho Maxi Dress" prevPrice="$19.99" latestPrice="$16.99"/>
+
+            <CartItem img ="https://i.ibb.co/jvGv6qf/mobile-1.png" title ="Boho Maxi Dress" prevPrice="$20.99" latestPrice="$10.99"/>
+
+
+            <CartItem img ="https://i.ibb.co/fvXHr2Y/blutooth-1.png" title ="Casual Denim Jacket" prevPrice="$20.99" latestPrice="$10.99"/>
             </div>
 
             {/* Bannner Sections */}

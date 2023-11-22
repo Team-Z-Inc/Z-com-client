@@ -1,14 +1,15 @@
 #NewArivalsWrapper{
     width: 100%;
     height: auto;
-    background-color: #f3e7f1;
+    /* background-color: #f3e7f1; */
     margin-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 #productWrapper{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 30px;
 }
 #topText{
     display: flex;

@@ -15,14 +15,14 @@ function FlashSale() {
        </div>
        {/* there is card components */}
       <div id={Styles.productWrapper} className='container overflow-hidden'>
-        <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-5.webp" title ="Leather Dress Shoes" prevPrice="$22.99" latestPrice="$13.99"/>
+        <CartItem img ="https://i.ibb.co/n1YRvWJ/headphone-5.png" title ="Leather Dress Shoes" prevPrice="$22.99" latestPrice="$13.99"/>
 
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-3.webp" title ="Trendy Bucket Hat" prevPrice="$39.99" latestPrice="$23.99"/>
+            <CartItem img ="https://i.ibb.co/tpypd3B/cpu-5.png" title ="Trendy Bucket Hat" prevPrice="$39.99" latestPrice="$23.99"/>
 
 
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-6.webp" title ="Stylish Statement Earrings" prevPrice="$39.99" latestPrice="$26.99"/>
+            <CartItem img ="https://i.ibb.co/fMhtt2T/watch-9.png" title ="Stylish Statement Earrings" prevPrice="$39.99" latestPrice="$26.99"/>
 
-            <CartItem img ="https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-4.webp" title ="Boho Maxi Dress" prevPrice="$29.99" latestPrice="$16.99"/>
+            <CartItem img ="https://i.ibb.co/j4sDV3Q/watch-5.png" title ="Boho Maxi Dress" prevPrice="$29.99" latestPrice="$16.99"/>
 
         </div>
     </div>
