@@ -1,93 +1,75 @@
-import React, { useState } from 'react'
-import styles from './productDetails.module.css'
-import { MdStarRate, MdOutlineFavoriteBorder   } from "react-icons/md";
+import styles from "./productDetails.module.css";
+import { MdStarRate, MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoFlag, IoLogoPinterest, IoLogoTwitter } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
 import { FaFacebookF, FaMinus } from "react-icons/fa6";
-import { TiMinus } from "react-icons/ti";
+// import { TiMinus } from "react-icons/ti";
 import { IoIosAdd } from "react-icons/io";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ProductDetails() {
 
+
+  const [activeImg, setActiveImg] = useState(images.img1);
 
  const [images, setImg] = useState({
   img1: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
   img2: "https://i.ibb.co/WpkH1vq/headphone-6.png",
   img3: "https://i.ibb.co/yRYbDCc/headphone-7.png"
+ })
+  const toggleAccordion = () => {
+    setAccordionOpen(!isAccordionOpen);
+  };
 
- });
+  // Increment Section
 
- const [activeImg, setActiveImg] = useState(images.img1)
-
-// Accordian Section State
-const [isAccordionOpen, setAccordionOpen] = useState(false);
-
-const toggleAccordion = () => {
-  setAccordionOpen(!isAccordionOpen);
-};
-
-// Increment Section
-
-const [quantity, setQuantity] = useState(0)
-
+  const [quantity, setQuantity] = useState(1);
 
   return (
     <div id={styles.productDetailsMainWrapper}>
-    
-         {/* Top navigations */}
-         <div className={styles.topNavigation}>
-             <ul>
-                <li><a href="/">Home /</a></li>
-                <li><a href="">Shop /</a></li>
-                <li><a href="/productDetails">Product Details</a></li>
-             </ul>
-         </div>
+      {/* Top navigations */}
+      <div className={styles.topNavigation}>
+        <ul>
+          <li>
+            <a href="/">Home /</a>
+          </li>
+          <li>
+            <a href="">Shop /</a>
+          </li>
+          <li>
+            <Link to="/productDetails">Product Details</Link>
+          </li>
+        </ul>
+      </div>
 
-         {/* Product  details Section */}
+      {/* Product  details Section */}
 
-         <div id={styles.productDetailsWrapper} className='container'>
-             {/* Img Section is Start Here */}
-             <div id={styles.imgSectionWrapper}>
-            
-                <div id={styles.largeImg}>
-                <div className={styles.offerBar}><p><b>-50%</b></p></div>
-                  <img src={activeImg} alt="" />
-                </div>
-                <div id={styles.imgNavigateWrap}>
-                    <div id={styles.imgItem}>
-                       <img src={images.img1} alt="" onClick={()=>{
-                        setActiveImg(images.img1)
-                       }}/>
-                    </div>
-                    
-                    <div id={styles.imgItem}>
-                       <img src={images.img2} alt="" onClick={()=>{
-                        setActiveImg(images.img2)
-                       }} />
-                    </div>
-                    
-                   <div id={styles.imgItem}>
-                     <img src={images.img3} alt="" onClick={
-                      ()=>{
-                        setActiveImg(images.img3)
-                       }
-                     } />
-                   </div>
-                </div>
-             </div>
-             {/* img Section is End here */}
-            
-             <div id= {styles.productInfoWrapper}>
-               <div>
-                  <p>BOY'S FASHION</p>
-                  <h2>Rainbow Sequin Profresonal Coat</h2>
-                  <p className={styles.starIcon}><MdStarRate /><MdStarRate /><MdStarRate /><MdStarRate /><MdStarRate /> </p>
-                  <span ><p className={styles.reviews}>6 reviews</p></span>
-                  <p className={styles.oldPrice}><strike>$9.99</strike> <b className={styles.newPrice}>$6.99</b> </p>
-                  <p className={styles.shortDescription}>It is a long established fact that a reader will be distracted by the readable there content of a page.</p>
-                  <hr className={styles.hr}/>
-               </div>
+      <div id={styles.productDetailsWrapper} className="container">
+        {/* Img Section is Start Here */}
+        <div id={styles.imgSectionWrapper}>
+          <div id={styles.largeImg}>
+            <div className={styles.offerBar}>
+              <p>
+                <b>-50%</b>
+              </p>
+            </div>
+            <img src={activeImg} alt="" />
+          </div>
+          <div id={styles.imgNavigateWrap}>
+            <div
+              id={styles.imgItem}
+              className={activeImg === images.img1 ? styles.active : ""}
+            >
+              <img
+                src={images.img1}
+                alt=""
+                onClick={() => {
+                  setActiveImg(images.img1);
+                }}
+              />
+            </div>
 
                <div className={styles.availabillitySection}>
                    <p>Availabillity : <span id={styles.availabillityInnerText}>132 Products Available</span></p>  
@@ -164,7 +146,23 @@ const [quantity, setQuantity] = useState(0)
          <div className='container' id={styles.productDes}>
           <p ><b>Introduction</b> <br /> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting, remaining essentially unchanged. It wasn’t popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, andei more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum to make a type specimen book </p>
 
+            <div
+              id={styles.imgItem}
+              className={activeImg === images.img3 ? styles.active : ""}
+            >
+              <img
+                src={images.img3}
+                alt=""
+                onClick={() => {
+                  setActiveImg(images.img3);
+                }}
+              />
+            </div>
+          </div>
+        </div>
+        {/* img Section is End here */}
 
+        <div id={styles.productInfoWrapper}>
           <div>
           <p className='py-3'  id={styles.productDes} ><b>Features:</b> <br /> 
            
@@ -176,12 +174,11 @@ const [quantity, setQuantity] = useState(0)
            </ul>
           
           </p>
-         </div>
-         </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 export default ProductDetails;
-
 
 // WE need list of part
