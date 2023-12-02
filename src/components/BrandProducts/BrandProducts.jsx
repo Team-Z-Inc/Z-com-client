@@ -14,7 +14,7 @@ function BrandProducts() {
             </div>
          </div>
          {/* Brand Product */}
-         <div className='container' id={styles.brandProduct}>
+         <div className='container' id={styles.brandProduct} data-aos='slide-up'>
             <div className={styles.items}>
                <img src="https://quomodothemes.website/html/shopus/assets/images/homepage-one/brand-img-1.webp" alt="" />
             </div>

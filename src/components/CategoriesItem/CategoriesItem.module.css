@@ -1,5 +1,5 @@
 .itemWrapper{
-    background-color: #f3e7f1;
+    background-color: #e1f0ff;
     width: 182px;
     height: 182px;
     border-radius: 12px;
@@ -8,7 +8,6 @@
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .itemWrapper{
-    background-color: #f3e7f1;
     width: 160px;
     height: 160px;
     border-radius: 12px;

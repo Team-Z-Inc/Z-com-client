@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./productDetails.module.css";
 import { MdStarRate, MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoFlag, IoLogoPinterest, IoLogoTwitter } from "react-icons/io5";
@@ -6,14 +7,12 @@ import { FaFacebookF, FaMinus } from "react-icons/fa6";
 // import { TiMinus } from "react-icons/ti";
 import { IoIosAdd } from "react-icons/io";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
 
 function ProductDetails() {
   const [images, setImg] = useState({
-    img1: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-14.webp",
-    img2: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-8.webp",
-    img3: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-slider-img-1.webp",
-    img4: "https://quomodothemes.website/html/shopus/assets/images/homepage-one/product-img/product-img-14.webp",
+    img1: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
+    img2: "https://i.ibb.co/WpkH1vq/headphone-6.png",
+    img3: "https://i.ibb.co/yRYbDCc/headphone-7.png",
   });
 
   const [activeImg, setActiveImg] = useState(images.img1);
@@ -27,7 +26,7 @@ function ProductDetails() {
 
   // Increment Section
 
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
 
   return (
     <div id={styles.productDetailsMainWrapper}>
@@ -60,10 +59,7 @@ function ProductDetails() {
             <img src={activeImg} alt="" />
           </div>
           <div id={styles.imgNavigateWrap}>
-            <div
-              id={styles.imgItem}
-              className={activeImg === images.img1 ? styles.active : ""}
-            >
+            <div id={styles.imgItem}>
               <img
                 src={images.img1}
                 alt=""
@@ -73,10 +69,7 @@ function ProductDetails() {
               />
             </div>
 
-            <div
-              id={styles.imgItem}
-              className={activeImg === images.img2 ? styles.active : ""}
-            >
+            <div id={styles.imgItem}>
               <img
                 src={images.img2}
                 alt=""
@@ -86,10 +79,7 @@ function ProductDetails() {
               />
             </div>
 
-            <div
-              id={styles.imgItem}
-              className={activeImg === images.img3 ? styles.active : ""}
-            >
+            <div id={styles.imgItem}>
               <img
                 src={images.img3}
                 alt=""
@@ -176,7 +166,6 @@ function ProductDetails() {
           <div id={styles.buttonSectionWrapper}>
             <div id={styles.addIcon}>
               <IoIosAdd
-                className={styles.plus}
                 onClick={() => {
                   setQuantity(quantity + 1);
                 }}
@@ -190,9 +179,8 @@ function ProductDetails() {
                 </p>
               </span>{" "}
               <FaMinus
-                className={styles.minus}
                 onClick={() => {
-                  setQuantity(quantity === 1 ? 1 : quantity - 1);
+                  setQuantity(quantity - 1);
                 }}
               />
             </div>
@@ -247,7 +235,7 @@ function ProductDetails() {
       </div>
       {/* Product details Section is End here */}
 
-      <div className="container">
+      <div className="container" id={styles.productDes}>
         <p>
           <b>Introduction</b> <br /> Lorem Ipsum is simply dummy text of the
           printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -262,7 +250,7 @@ function ProductDetails() {
         </p>
 
         <div>
-          <p className="py-3">
+          <p className="py-3" id={styles.productDes}>
             <b>Features:</b> <br />
             <ul>
               <li>slim body with metal cover</li>

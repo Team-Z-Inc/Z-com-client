@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: 80px;
-  background: #ae1c9a;
+  background: #455d7a;
 }
 .container .navbar {
   width: 70%;
@@ -20,13 +20,13 @@
   color: #fff;
   cursor: pointer;
 }
-.allcatelog .icon {
+.allcatelog .icons {
   padding: 8px;
   margin-right: 5px;
   font-size: 40px;
   color: #fff;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.27);
+  background: rgba(150, 149, 149, 0.195);
 }
 .navbar .menuitem {
   display: flex;
@@ -55,17 +55,19 @@
 
 .navbar .vandorbtn button {
   position: relative;
-  padding: 5px 30px;
+  padding: 8px 20px;
   border: none;
   outline: none;
   border-radius: 50px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: "lost";
   color: #000;
   background: #ffbb38;
   transition: 0.4s;
 }
 .navbar .vandorbtn .arrow {
-  font-size: 40px;
+  font-size: 30px;
 }
 .navbar .vandorbtn button::after {
   content: " ";
@@ -115,15 +117,29 @@
   color: #000;
 }
 .navbar .allcatelog .dropdown .dropMenu:hover {
-  background: #ae1c9a;
-  color: #fff;
+  background: #e1f0ff;
+  color: #000;
 }
 
 .navbar .allcatelog .dropdown .dropMenu .icon {
   width: 40px;
   height: 40px;
   margin-right: 5px;
+  padding: 5px;
   color: #ffbb38;
+  border-radius: 50%;
+  background: rgba(150, 149, 149, 0.195);
+}
+
+.alltoggole {
+  position: relative;
+  display: none;
+  padding: 8px;
+  margin-right: 5px;
+  font-size: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(150, 149, 149, 0.195);
 }
 
 @media screen and (min-width: 992px) and (max-width: 1440px) {
@@ -144,5 +160,14 @@
 @media screen and (min-width: 280px) and (max-width: 868px) {
   .navbar .menuitem {
     display: none;
+  }
+  .allcatelog .icons {
+    display: none;
+  }
+  .alltoggole {
+    display: block;
+  }
+  .responsiveBar {
+    display: block;
   }
 }
