@@ -1,0 +1,112 @@
+.responsiveBar {
+  display: none;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  padding: 20px;
+  background: #fff;
+  z-index: 10;
+  border-radius: 5px;
+  border: 1px solid #455d7a;
+}
+
+.responsiveBar .loginBTN a {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "lost";
+  color: #000;
+  background: #ffbb38;
+  transition: 0.4s;
+}
+.responsiveBar .loginBTN .arrow {
+  font-size: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.search span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  background: yellowgreen;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: 2px solid #455d7a;
+  border: none;
+}
+.search input:focus {
+  outline: 2px solid yellowgreen;
+  border: none;
+}
+
+.wishlist a {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #455d7a;
+}
+.wishlist sup {
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 5px;
+}
+.cartlist a {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #455d7a;
+}
+.cartlist sup {
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 5px;
+}
+.menuitem li {
+  position: relative;
+  list-style: none;
+  margin: 20px 10px;
+}
+.menuitem li a {
+  width: 100%;
+  padding: 8px 10px;
+  color: #455d7a;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menuitem li .active {
+  border: 2px solid #455d7a;
+  border-radius: 5px;
+}
+.navbar .menuitem li a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 280px) and (max-width: 868px) {
+  .responsiveBar {
+    display: block;
+  }
+}

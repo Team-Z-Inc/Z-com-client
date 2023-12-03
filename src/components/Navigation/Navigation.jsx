@@ -5,9 +5,11 @@ import { GiAmpleDress } from "react-icons/gi";
 import style from "./Navigation.module.css";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ResponsiveBar from "./ResponsiveBar";
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
+  const [allToggle, setAllToggle] = useState(false);
 
   return (
     <div className={style.container}>
@@ -18,7 +20,7 @@ const Navigation = () => {
             setToggle(!toggle);
           }}
         >
-          <HiOutlineMenuAlt1 className={style.icon} />
+          <HiOutlineMenuAlt1 className={style.icons} />
           All Categories
           {toggle && (
             <div className={style.dropdown}>
@@ -140,9 +142,17 @@ const Navigation = () => {
         </div>
         <div className={style.vandorbtn}>
           <button type="button">
-            Became Vendor <IoIosArrowRoundForward className={style.arrow} />
+            LOGIN <IoIosArrowRoundForward className={style.arrow} />
           </button>
         </div>
+
+        <HiOutlineMenuAlt1
+          className={style.alltoggole}
+          onClick={() => {
+            setAllToggle(!allToggle);
+          }}
+        />
+        {allToggle && <ResponsiveBar />}
       </nav>
     </div>
   );

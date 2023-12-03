@@ -1,54 +1,34 @@
-#carouselWrapper{
+#carouselWrapper {
   width: 100%;
-}
-  #carouselIndicators button {
-    background-color: #7b0fe7;
-   
+  height: 100%;
 }
 
-#carouselImg{
+#carouselImg {
   width: 100%;
-  height: 650px;
+  height: 100%;
   overflow: hidden;
 }
 
-#carouselImg img{
+#carouselImg img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
 /* Styles for screens with a width between 1200px and 1400px (inclusive) */
-@media screen and (min-width: 992px) and (max-width: 1200px ){
-
-  #carouselImg{
-    height: 450px;
-   
+@media screen and (min-width: 280px) and (max-width: 868px) {
+  #carouselWrapper {
+    width: 100%;
+    height: 50vh;
   }
-
-}
-@media screen and (min-width: 768px) and (max-width: 991px ){
-
-  #carouselImg{
-    height: 365px;
-   
+  #carouselImg {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
   }
-
-}
-@media screen and (min-width: 576px) and (max-width: 767px ){
-
-  #carouselImg{
-    height: 260px;
-   
+  #carouselImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 }
-
-
-@media screen and (min-width: 300px) and (max-width: 575px ){
-
-  #carouselImg{
-    height: 220px;
-   
-  }
-}
-

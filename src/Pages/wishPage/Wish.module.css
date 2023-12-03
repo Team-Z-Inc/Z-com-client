@@ -1,0 +1,33 @@
+
+
+
+img {
+    width: 80px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .main_table {
+    width: 100%;
+    border-collapse: collapse; /* Add this to remove default spacing between table cells */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .td{
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Set default background color for header */
+  }
+  
+  tr:hover {
+    background-color: #cce5ff; /* Set background color on hover */
+  }
+  
